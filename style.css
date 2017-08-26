@@ -5,9 +5,118 @@ Author: Ridwan Hasanah
 Author URI: https://www.facebook.com/ridwanhasanah3/
 Descriotion: Learning Building Themez
 Version: 1.0
-License URI: https://www.facebook.com/ridwanhasanah3/
-Tags: blog, two-columns, left-sidebar, accessibility-ready, custom-background, custom-colors, custom-header, custom-logo, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready
-Text Domain: twentyfifteen
-Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
 
  */
+
+ body{
+	margin: 50px auto;
+	width: 95%;
+}
+a{
+	text-decoration: none;
+	color: rgb(72, 143, 217);
+}
+ h1 a{
+ 	/* color: #f0fff; */
+ 	padding: 5px;
+ 	border-radius: 10px;
+ 	background-color: #f1f1f1; 
+ }
+
+h2{
+	margin-top: 0px;
+}
+h1{
+	margin-bottom: 0px;
+}
+
+li{
+	list-style: none;
+}
+nav ul {
+	padding-left: 0px;
+}
+nav li{
+	display: inline-block;
+	margin-right: 10px;
+}
+
+nav li a {
+	color: #000;
+}
+
+header nav li{
+	font-size: 22px; 
+	padding: 3px;
+	color: #000;
+}
+
+header{
+	border-bottom: 3px solid #000;
+}
+
+main, aside{
+	float: left;
+	margin-top: 30px;
+}
+
+main{
+	width: 75%;
+	margin-right: 5%;
+}
+aside{
+	width: 20%;
+}
+
+footer{
+	border-top: 3px solid #000;
+}
+.sub_judul{
+	font-weight: bold;
+	font-size: 20px;
+	color: #9500ff;
+}
+
+header nav{
+	float: left;
+	width: 70%;
+}
+
+#searc_form{
+	float: right;
+	margin: 20px;
+}
+.clear{
+	clear: both;
+}
+#main-page{
+	width: 95%;
+	margin: 0 auto;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+.custom_post, a{
+	display: inline-block;
+	width: 50%;
+	margin: 0 1.5%;
+	background-color: #f5f5f5;
+	padding: 5px;
+	text-decoration: none;
+	color: #000;
+}
+.custom_post, a:hover{
+	display: inline-block;
+	width: 50%;
+	margin: 0 1.5%;
+	background-color: #f5f5f5;
+	padding: 5px;
+	text-decoration: none;
+	color: #55f;
+}
+.home{
+	text-align: center;
+}
