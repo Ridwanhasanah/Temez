@@ -6,7 +6,9 @@
  *
  * @package ridwanprogrammer
  */
-
+/*
+-wp_kses() ini adlah fungsi untuk menampilkan html
+*/
 ?>
 
 <section class="no-results not-found">
@@ -16,7 +18,7 @@
 
 	<div class="page-content">
 		<?php
-		if ( is_home() && current_user_can( 'publish_posts' ) ) : ?>
+		if ( is_home() && current_user_can( 'publish_posts' ) )/*apakah user mempunya kemampuan publilsh post*/ : ?>
 
 			<p><?php
 				printf(

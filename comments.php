@@ -15,6 +15,16 @@
  * the visitor has not yet entered the password we will
  * return early without loading the comments.
  */
+
+/*
+-have_comments() untuk cek punya comentar atau tidak
+-get_comments_number() Ambil jumlah komentar yang dimiliki pos.
+-number_format_i18n() Mengkonversi nomor float ke format berdasarkan lokal.
+-the_comments_navigation() Menampilkan navigasi ke komentar berikutnya / sebelumnya, jika ada.
+-wp_list_comments() Menampilkan semua komentar untuk sebuah posting atau Page berdasarkan berbagai parameter termasuk yang ada di area administrasi.
+-comments_open() Tag Bersyarat ini memeriksa apakah komentar diperbolehkan untuk Pos yang sekarang atau Post ID yang diberikan. Ini adalah fungsi boolean, artinya mengembalikan TRUE atau FALSE.
+-comment_form() Tag ini menampilkan formulir komentar lengkap untuk digunakan dalam template.
+*/
 if ( post_password_required() ) {
 	return;
 }

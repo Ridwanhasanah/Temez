@@ -6,7 +6,29 @@
  *
  * @package ridwanprogrammer
  */
+/*
+-esc_html_e() seperti menulis teks html biasa atau echo . Menampilkan teks terjemahan yang telah lolos untuk penggunaan aman dalam keluaran HTML.
 
+-get_header() menampilkan header
+-get_search_form() Menampilkan form pencarian
+-the_widget( 'WP_Widget_Recent_Posts' ) menampilkan widget post terakhir
+
+-wp_list_categories( array(
+								'orderby'    => 'count',
+								'order'      => 'DESC',
+								'show_count' => 1,
+								'title_li'   => '',
+								'number'     => 2, //menampilkan jumlah kategori
+							) )
+untuk menampikan list kategori
+
+-the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$archive_content" ) menampilkan drodown bulan
+-convert_smilies( ':)' ) untuk menampilkan emoticon senyum
+
+-the_widget() adlah fungsi utk menampilkan widget di luar sidebar yang dapat di letakan di manapun pada template
+selengkapnya https://codex.wordpress.org/Function_Reference/the_widget
+
+*/
 get_header(); ?>
 
 	<div id="primary" class="content-area">

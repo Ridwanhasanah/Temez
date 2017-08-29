@@ -7,6 +7,11 @@
  * @package ridwanprogrammer
  */
 
+/*
+-get_search_query() Mengambil isi variabel query pencarian WordPress.
+
+*/
+
 get_header(); ?>
 
 	<section id="primary" class="content-area">

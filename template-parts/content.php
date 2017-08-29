@@ -4,6 +4,35 @@
  *
  */
 
+/*
+-the_ID() untuk menampilkan ID item saat ini di WordPress Loop.
+-post_class() menampikan kelas untuk post div (css)
+-get_permalink() Mengambil permalink untuk postingan atau post ID saat ini.
+-esc_url() untuk ke amanan url 
+-ridwanprogrammer_posted_on(); menampilkan postingan waktu pembuatan post or page
+
+-sprintf(
+				wp_kses(
+					 //translators: %s: Name of current post. Only visible to screen readers 
+					__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'ridwanprogrammer' ),
+					array(
+						'span' => array(
+							'class' => array(),
+						),
+					)
+				),
+				get_the_title()
+			)
+
+			menampilkan  continue reading +nama page or post
+
+
+-wp_link_pages() Menampilkan link halaman untuk posting paginasi (termasuk Quicktag satu kali atau lebih). 
+Tag ini harus berada dalam Loop.
+
+-ridwanprogrammer_entry_footer() Menampilkan link Edit pada post dan page
+*/
+
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -35,7 +64,7 @@
 						),
 					)
 				),
-				get_the_title()
+				get_the_title() //mengambil title
 			) );
 
 			wp_link_pages( array(

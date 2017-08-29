@@ -7,6 +7,8 @@
  * @package ridwanprogrammer
  */
 
+require get_template_directory() . '/inc/init.php';
+
 /**
  * Implement the Custom Header feature.
  */

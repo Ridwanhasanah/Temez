@@ -6,7 +6,12 @@
  *
  * @package ridwanprogrammer
  */
+/*
+-the_archive_title() Menampilkan jdul arsip
+-the_archive_description( '<div class="taxonomy-description">', '</div>' ) menampilkan penjelasan arsip
+-the_posts_navigation() Menampilkan navigasi ke daftar posting berikutnya / sebelumnya, jika ada.
 
+*/
 get_header(); ?>
 
 	<div id="primary" class="content-area">

@@ -7,6 +7,11 @@
  * @package ridwanprogrammer
  */
 
+/*
+
+-dynamic_sidebar()  menampilkan sidebar default
+*/
+
 if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 	return;
 }

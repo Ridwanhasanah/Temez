@@ -46,3 +46,12 @@
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
+<!-- 
+-language_attributes() Menampilkan encoding yang ada di feed setting>reading
+-bloginfo('name') menampilkan nama atau judul blog
+-body_class()  menampilkan  class pada element body (css)
+-the_custom_logo() menampilkan cidtome logo seperti di home
+- is_front_page() Apakah situs sedang dipratinjau di Penyesuai.
+-is_home()  halaman home
+-wp_nav_menu() menampilkan navigasi menu
+ -->
