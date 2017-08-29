@@ -18,10 +18,10 @@ a{
 	color: rgb(72, 143, 217);
 }
  h1 a{
- 	/* color: #f0fff; */
+ 	color: #000;
  	padding: 5px;
  	border-radius: 10px;
- 	background-color: #f1f1f1; 
+ 	background-color: #ffffff; 
  }
 
 h2{
@@ -44,18 +44,21 @@ nav li{
 }
 
 nav li a {
+	background-color: #fff;
 	padding: 1px 20px;
 	color: #000;
+}
+nav li a:hover{
+	background-color: #f5f5f5;
+	padding: 1px 20px;
+	color: #666;
+	border-radius: 0px 10px 0px 10px;
 }
 
 header nav li{
 	font-size: 22px; 
 	padding: 3px;
 	color: #000;
-}
-
-header{
-	border-bottom: 3px solid #000;
 }
 
 main, aside{
@@ -70,9 +73,13 @@ main{
 aside{
 	width: 20%;
 }
+header{
+	border-top: 3px solid #000;
+}
 
 footer{
-	border-top: 3px solid #000;
+	
+	margin-bottom: 20px;
 }
 .sub_judul{
 	font-weight: bold;
@@ -105,10 +112,19 @@ img {
 	display: inline-block;
 	width: 50%;
 	margin: 0 1.5%;
-	background-color: #f5f5f5;
+	/* background-color: #f5f5f5; */
 	padding: 5px;
 	text-decoration: none;
 	color: #000;
+}
+.custom_post, a:hover{
+	display: inline-block;
+	width: 50%;
+	margin: 0 1.5%;
+	background-color: #f5f5f5;
+	padding: 5px;
+	text-decoration: none;
+	color: #6699ff;
 }
 .custom_post:hover{
 	display: inline-block;
@@ -117,7 +133,7 @@ img {
 	background-color: #f5f5f5;
 	padding: 5px;
 	text-decoration: none;
-	color: #55f;
+	color: #6699ff;
 }
 .home{
 	text-align: center;
@@ -127,4 +143,31 @@ img {
 	display: inline-block;
 	width: 100%;
 	
+}
+
+.site-header{
+	text-align: center;
+}
+
+.clear{
+	clear: both;
+}
+.imghome{
+	width: 100%;
+	height: 500px;
+}
+.row1{
+	width: 100%;
+	height: 400px;
+	margin-top: 10px;
+}
+.row1text{
+	width: 45%;
+	height: 300px;
+	float: left;
+}
+.row1img{
+	width: 45%;
+	height: 300px;
+	float: right;
 }

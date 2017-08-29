@@ -14,14 +14,14 @@
 <div id="page" class="site">
 	<!-- esc_html_e() Menampilkan teks terjemahan yang telah lolos untuk penggunaan aman dalam keluaran HTML. -->
 
-	<header id="masthead" class="site-header">
+	<header class="site-header">
 		<div class="site-branding">
 			<?php
 			the_custom_logo();//menampilkan logo yang terhubung ke home
 			if ( is_front_page() && is_home() ) : /*jika frontpage dan home */ ?>
 				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 			<?php else : ?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 			<?php
 			endif;
 
