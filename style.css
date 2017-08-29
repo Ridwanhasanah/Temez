@@ -38,11 +38,13 @@ nav ul {
 	padding-left: 0px;
 }
 nav li{
+	padding: 5px;
 	display: inline-block;
 	margin-right: 10px;
 }
 
 nav li a {
+	padding: 1px 20px;
 	color: #000;
 }
 
@@ -108,7 +110,7 @@ img {
 	text-decoration: none;
 	color: #000;
 }
-.custom_post, a:hover{
+.custom_post:hover{
 	display: inline-block;
 	width: 50%;
 	margin: 0 1.5%;
@@ -119,4 +121,10 @@ img {
 }
 .home{
 	text-align: center;
+}
+
+.navmenu{
+	display: inline-block;
+	width: 100%;
+	
 }

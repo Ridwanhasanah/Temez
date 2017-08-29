@@ -6,6 +6,21 @@
  *
  * @package ridwanprogrammer
  */
+/*===== the_excerpt =====*/
+function get_excerpt_length(){  //untuk menampilkan jumlah kata artikel pada blog
+	return 50;
+}
+
+add_filter('excerpt_length','get_excerpt_length' );
+
+function return_excerpt_text(){ //untuk menampilkan lanjut baca pada artikel
+
+	return '';
+
+}
+
+add_filter('excerpt_more', 'return_excerpt_text' );
+
 
 require get_template_directory() . '/inc/init.php';
 

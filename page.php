@@ -21,22 +21,6 @@ get_header(); ?>
 			while ( have_posts() ) : the_post();
 
 				get_template_part( 'template-parts/content', 'page' ); /*asal page berada di template-parts/content*/
-				echo 'INi Halaman Page <br>';
-
-				echo wp_kses(
-						/* translators: 1: link to WP admin new post page. */
-						__( 'Ready to publish your first post? <a href="%1$s">Get started here</a>.', 'ridwanprogrammer' ),
-						array(
-							'a' => array(
-								'href' => array(),
-							),
-						)
-					);  
-
-				//echo esc_html_e( sprintf( esc_html__( 'Try looking in the monthly archives.   %$s ', 'ridwanprogrammer' ), convert_smilies( ':)' ) ), 'ridwanprogrammer' );
-				echo '<pre>';
-				print_r( ridwanprogrammer_entry_footer() );
-				echo '</pre>';
 
 				// If comments are open or we have at least one comment, load up the comment template.
 				if ( comments_open() || get_comments_number() ) :

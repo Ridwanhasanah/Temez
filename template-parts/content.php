@@ -51,10 +51,9 @@ Tag ini harus berada dalam Loop.
 		<?php
 		endif; ?>
 	</header><!-- .entry-header -->
-
-	<div class="entry-content">
-		<?php
-			the_content( sprintf(
+<?php 
+if (is_single()) { 
+	the_content( sprintf(
 				wp_kses(
 					/* translators: %s: Name of current post. Only visible to screen readers */
 					__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'ridwanprogrammer' ),
@@ -64,8 +63,13 @@ Tag ini harus berada dalam Loop.
 						),
 					)
 				),
-				get_the_title() //mengambil title
+				get_the_title()
 			) );
+
+}else{
+?>
+	<div class="entry-content">
+		<?php echo get_the_excerpt();?><a href="<?php the_permalink();?>"> Lanjut baca...</a><?php //the_content();
 
 			wp_link_pages( array(
 				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'ridwanprogrammer' ),
@@ -73,7 +77,7 @@ Tag ini harus berada dalam Loop.
 			) );
 		?>
 	</div><!-- .entry-content -->
-
+	<?php } ?>
 	<footer class="entry-footer">
 		<?php ridwanprogrammer_entry_footer(); ?>
 	</footer><!-- .entry-footer -->

@@ -12,7 +12,6 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( '', 'ridwanprogrammer' ); ?></a>
 	<!-- esc_html_e() Menampilkan teks terjemahan yang telah lolos untuk penggunaan aman dalam keluaran HTML. -->
 
 	<header id="masthead" class="site-header">
@@ -31,18 +30,20 @@
 				<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
 			<?php
 			endif; ?>
-		</div><!-- .site-branding -->
 
-		
+			<nav class="navmenu">
+
 			<?php
-				$args = array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
+			$args = array(
+				'theme_location' => 'menu-1',
+				'menu_id'        => 'primary-menu',
 				);
 
-				wp_nav_menu($args);
+			wp_nav_menu($args);
 			?>
 		</nav><!-- #site-navigation -->
+		</div><!-- .site-branding -->
+		
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
