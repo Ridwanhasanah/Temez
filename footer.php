@@ -1,6 +1,6 @@
 </div><!-- #content -->
 <div class="clear"></div>
-	<footer id="colophon" class="site-footer">
+	<footer id="colophon" class="headerbox">
 		<div class="site-info">
 			&copy; <?php bloginfo('name'); echo " - " . date('Y'); ?>
 		</div><!-- .site-info -->

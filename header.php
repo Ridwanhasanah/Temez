@@ -14,8 +14,8 @@
 <div id="page" class="site">
 	<!-- esc_html_e() Menampilkan teks terjemahan yang telah lolos untuk penggunaan aman dalam keluaran HTML. -->
 
-	<header class="site-header">
-		<div class="site-branding">
+	<header class="headerbox">
+		<div class="site-branding header_container">
 			<?php
 			the_custom_logo();//menampilkan logo yang terhubung ke home
 			if ( is_front_page() && is_home() ) : /*jika frontpage dan home */ ?>
@@ -30,7 +30,6 @@
 				<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
 			<?php
 			endif; ?>
-
 			<nav class="navmenu">
 
 			<?php
@@ -42,6 +41,7 @@
 			wp_nav_menu($args);
 			?>
 		</nav><!-- #site-navigation -->
+			
 		</div><!-- .site-branding -->
 		
 	</header><!-- #masthead -->

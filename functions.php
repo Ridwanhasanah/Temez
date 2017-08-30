@@ -8,7 +8,7 @@
  */
 /*===== the_excerpt =====*/
 function get_excerpt_length(){  //untuk menampilkan jumlah kata artikel pada blog
-	return 50;
+	return 30;
 }
 
 add_filter('excerpt_length','get_excerpt_length' );

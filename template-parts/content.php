@@ -36,7 +36,7 @@ Tag ini harus berada dalam Loop.
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<div >
+	<div class="post_article">
 		<header class="entry-header">
 			<?php
 			if ( is_singular() ) :
@@ -65,7 +65,7 @@ Tag ini harus berada dalam Loop.
 		}else{
 			?>
 
-		<?php echo get_the_excerpt();?><a href="<?php the_permalink();?>"> Lanjut baca...</a><?php //the_content();
+		<?php echo get_the_excerpt();?><a class="baca" href="<?php the_permalink();?>"> Baca...</a><?php //the_content();
 
 		wp_link_pages( array(
 			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'ridwanprogrammer' ),
@@ -80,8 +80,6 @@ Tag ini harus berada dalam Loop.
 			endif; ?>
 			<!-- .entry-content -->
 			<?php } ?>
-			<footer class="entry-footer">
-				<?php ridwanprogrammer_entry_footer(); ?>
-			</footer><!-- .entry-footer -->
+			
 		</div>
 	</article><!-- #post-<?php the_ID(); ?> -->
